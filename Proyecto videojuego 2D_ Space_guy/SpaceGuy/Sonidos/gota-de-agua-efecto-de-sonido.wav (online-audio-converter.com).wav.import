@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gota-de-agua-efecto-de-sonido.wav (online-audio-converter.com).wav-4d8e8b0d9a9d042c48ac57d515476832.sample"
+
+[deps]
+
+source_file="res://Sonidos/gota-de-agua-efecto-de-sonido.wav (online-audio-converter.com).wav"
+dest_files=[ "res://.import/gota-de-agua-efecto-de-sonido.wav (online-audio-converter.com).wav-4d8e8b0d9a9d042c48ac57d515476832.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

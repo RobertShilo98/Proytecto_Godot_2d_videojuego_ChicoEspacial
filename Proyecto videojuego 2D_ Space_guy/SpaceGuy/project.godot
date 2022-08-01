@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Space Guy"
+run/main_scene="res://Node_mundo.tscn"
+boot_splash/image="res://cargando.png"
+config/icon="res://meteroro_icono.png"
+
+[display]
+
+window/size/width=640
+window/size/height=960
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

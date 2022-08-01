@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://summer_blaster/Summer Blaster.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://CanvasLayer_interfaz.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 1 )
+
+[node name="CanvasLayer_interfaz" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Score_Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -69.0
+margin_right = 56.0
+margin_bottom = 223.0
+custom_fonts/font = SubResource( 1 )
+text = "0
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mensaje_Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -279.5
+margin_top = 147.0
+margin_right = 279.5
+margin_bottom = 287.0
+custom_fonts/font = SubResource( 2 )
+text = "SpaceGuy"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_play" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -103.568
+margin_top = -200.0
+margin_right = 96.4324
+margin_bottom = -100.0
+custom_fonts/font = SubResource( 3 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mensaje_Timer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+[connection signal="pressed" from="Button_play" to="." method="_on_Button_play_pressed"]
+[connection signal="timeout" from="Mensaje_Timer" to="." method="_on_Mensaje_Timer_timeout"]
